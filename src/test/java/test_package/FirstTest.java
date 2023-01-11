@@ -1,3 +1,5 @@
+package test_package;
+
 import org.testng.annotations.Test;
 
 public class FirstTest {

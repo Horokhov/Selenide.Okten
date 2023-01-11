@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-BVVFRD3" failures="0" tests="2" name="test_package.FirstTest" time="20.207" errors="0" timestamp="11 Jan 2023 19:12:06 GMT">
+  <testcase classname="test_package.SecondTest" name="@BeforeClass selenideConfig" time="0.0">
+    <failure type="org.openqa.selenium.WebDriverException" message="unknown error: cannot find Chrome binary
+Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
+System info: host: &amp;apos;DESKTOP-BVVFRD3&amp;apos;, ip: &amp;apos;169.254.123.223&amp;apos;, os.name: &amp;apos;Windows 10&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;19.0.1&amp;apos;
+Driver info: driver.version: SelenideDriver
+selenide.url: https://github.com/Horokhov/QA_Automation
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	(No symbol) [0x00796643]
+	(No symbol) [0x0072BE21]
+	(No symbol) [0x0062DA9D]
+	(No symbol) [0x0064CC30]
+	(No symbol) [0x0064A899]
+	(No symbol) [0x00686917]
+	(No symbol) [0x0068655C]
+	(No symbol) [0x0067FB76]
+	(No symbol) [0x006549C1]
+	(No symbol) [0x00655E5D]
+	GetHandleVerifier [0x00A0A142+2497106]
+	GetHandleVerifier [0x00A385D3+2686691]
+	GetHandleVerifier [0x00A3BB9C+2700460]
+	GetHandleVerifier [0x00843B10+635936]
+	(No symbol) [0x00734A1F]
+	(No symbol) [0x0073A418]
+	(No symbol) [0x0073A505]
+	(No symbol) [0x0074508B]
+	BaseThreadInitThunk [0x761300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77C37BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C37B8E+238]
+">
+      <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BVVFRD3', ip: '169.254.123.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: https://github.com/Horokhov/QA_Automation
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	(No symbol) [0x00796643]
+	(No symbol) [0x0072BE21]
+	(No symbol) [0x0062DA9D]
+	(No symbol) [0x0064CC30]
+	(No symbol) [0x0064A899]
+	(No symbol) [0x00686917]
+	(No symbol) [0x0068655C]
+	(No symbol) [0x0067FB76]
+	(No symbol) [0x006549C1]
+	(No symbol) [0x00655E5D]
+	GetHandleVerifier [0x00A0A142+2497106]
+	GetHandleVerifier [0x00A385D3+2686691]
+	GetHandleVerifier [0x00A3BB9C+2700460]
+	GetHandleVerifier [0x00843B10+635936]
+	(No symbol) [0x00734A1F]
+	(No symbol) [0x0073A418]
+	(No symbol) [0x0073A505]
+	(No symbol) [0x0074508B]
+	BaseThreadInitThunk [0x761300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77C37BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C37B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:55)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:111)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:72)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:69)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:153)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:139)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:105)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:192)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:87)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:51)
+	at test_package.SecondTest.selenideConfig(SecondTest.java:9)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+... Removed 23 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="test_package.SecondTest" name="@BeforeMethod setUp" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="test_package.SecondTest" name="@AfterTest shutDown" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="test_package.FirstTest" name="test" time="0.012"/>
+  <testcase classname="test_package.SecondTest" name="test2" time="0.0">
+    <skipped/>
+  </testcase>
+</testsuite>

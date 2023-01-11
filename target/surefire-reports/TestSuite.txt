@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 20.519 s <<< FAILURE! - in TestSuite
+test_package.SecondTest.selenideConfig  Time elapsed: 20.289 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot find Chrome binary
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BVVFRD3', ip: '169.254.123.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: https://github.com/Horokhov/QA_Automation
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	(No symbol) [0x00796643]
+	(No symbol) [0x0072BE21]
+	(No symbol) [0x0062DA9D]
+	(No symbol) [0x0064CC30]
+	(No symbol) [0x0064A899]
+	(No symbol) [0x00686917]
+	(No symbol) [0x0068655C]
+	(No symbol) [0x0067FB76]
+	(No symbol) [0x006549C1]
+	(No symbol) [0x00655E5D]
+	GetHandleVerifier [0x00A0A142+2497106]
+	GetHandleVerifier [0x00A385D3+2686691]
+	GetHandleVerifier [0x00A3BB9C+2700460]
+	GetHandleVerifier [0x00843B10+635936]
+	(No symbol) [0x00734A1F]
+	(No symbol) [0x0073A418]
+	(No symbol) [0x0073A505]
+	(No symbol) [0x0074508B]
+	BaseThreadInitThunk [0x761300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77C37BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C37B8E+238]
+
+	at test_package.SecondTest.selenideConfig(SecondTest.java:9)
+

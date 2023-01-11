@@ -1,0 +1,298 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 11 23:11:46 MUT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20207 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_package.SecondTest.selenideConfig()'><b>selenideConfig</b><br>Test class: test_package.SecondTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BVVFRD3&apos;, ip: &apos;169.254.123.223&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: SelenideDriver
+selenide.url: https://github.com/Horokhov/QA_Automation
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	(No symbol) [0x00796643]
+	(No symbol) [0x0072BE21]
+	(No symbol) [0x0062DA9D]
+	(No symbol) [0x0064CC30]
+	(No symbol) [0x0064A899]
+	(No symbol) [0x00686917]
+	(No symbol) [0x0068655C]
+	(No symbol) [0x0067FB76]
+	(No symbol) [0x006549C1]
+	(No symbol) [0x00655E5D]
+	GetHandleVerifier [0x00A0A142+2497106]
+	GetHandleVerifier [0x00A385D3+2686691]
+	GetHandleVerifier [0x00A3BB9C+2700460]
+	GetHandleVerifier [0x00843B10+635936]
+	(No symbol) [0x00734A1F]
+	(No symbol) [0x0073A418]
+	(No symbol) [0x0073A505]
+	(No symbol) [0x0074508B]
+	BaseThreadInitThunk [0x761300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77C37BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C37B8E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:55)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:111)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:72)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:69)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:153)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:139)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:105)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:192)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:87)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:51)
+	at test_package.SecondTest.selenideConfig(SecondTest.java:9)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace544628437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace544628437'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BVVFRD3', ip: '169.254.123.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: https://github.com/Horokhov/QA_Automation
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	(No symbol) [0x00796643]
+	(No symbol) [0x0072BE21]
+	(No symbol) [0x0062DA9D]
+	(No symbol) [0x0064CC30]
+	(No symbol) [0x0064A899]
+	(No symbol) [0x00686917]
+	(No symbol) [0x0068655C]
+	(No symbol) [0x0067FB76]
+	(No symbol) [0x006549C1]
+	(No symbol) [0x00655E5D]
+	GetHandleVerifier [0x00A0A142+2497106]
+	GetHandleVerifier [0x00A385D3+2686691]
+	GetHandleVerifier [0x00A3BB9C+2700460]
+	GetHandleVerifier [0x00843B10+635936]
+	(No symbol) [0x00734A1F]
+	(No symbol) [0x0073A418]
+	(No symbol) [0x0073A505]
+	(No symbol) [0x0074508B]
+	BaseThreadInitThunk [0x761300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77C37BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C37B8E+238]
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:55)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:111)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:72)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:69)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:153)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:139)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:105)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:192)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:68)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:66)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:30)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:87)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:51)
+	at test_package.SecondTest.selenideConfig(SecondTest.java:9)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:130)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:173)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>test_package.SecondTest@fe18270</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_package.SecondTest.setUp()'><b>setUp</b><br>Test class: test_package.SecondTest</td>
+<td></td>
+<td>0</td>
+<td>test_package.SecondTest@fe18270</td></tr>
+<tr>
+<td title='test_package.SecondTest.shutDown()'><b>shutDown</b><br>Test class: test_package.SecondTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_package.FirstTest.test()'><b>test</b><br>Test class: test_package.FirstTest</td>
+<td></td>
+<td>0</td>
+<td>test_package.FirstTest@10d59286</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_package.SecondTest.test2()'><b>test2</b><br>Test class: test_package.SecondTest</td>
+<td></td>
+<td>0</td>
+<td>test_package.SecondTest@fe18270</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="20.519" tests="5" errors="0" skipped="3" failures="1">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\max_h\.cache\selenium\chromedriver\win32\109.0.5414.74\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\max_h\IdeaProjects\QA_Automation\target\test-classes;C:\Users\max_h\IdeaProjects\QA_Automation\target\classes;C:\Users\max_h\.m2\repository\org\testng\testng\6.1.1\testng-6.1.1.jar;C:\Users\max_h\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\max_h\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\max_h\.m2\repository\com\beust\jcommander\1.12\jcommander-1.12.jar;C:\Users\max_h\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\max_h\.m2\repository\com\codeborne\selenide\5.25.0\selenide-5.25.0.jar;C:\Users\max_h\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\max_h\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\max_h\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\max_h\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\max_h\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\max_h\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\max_h\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\max_h\.m2\repository\com\squareup\okhttp3\okhttp\3.12.13\okhttp-3.12.13.jar;C:\Users\max_h\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\max_h\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\max_h\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\max_h\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\max_h\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\max_h\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\max_h\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\max_h\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\max_h\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\max_h\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\max_h\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\max_h\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\max_h\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\max_h\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\max_h\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Indian/Mauritius"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\max_h\AppData\Local\Temp\surefire2259788061360793320\surefirebooter17068539108808808765.jar C:\Users\max_h\AppData\Local\Temp\surefire2259788061360793320 2023-01-11T23-11-42_585-jvmRun1 surefire7084865456107162962tmp surefire_012986617550881754390tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="test_package.*Test"/>
+    <property name="surefire.test.class.path" value="C:\Users\max_h\IdeaProjects\QA_Automation\target\test-classes;C:\Users\max_h\IdeaProjects\QA_Automation\target\classes;C:\Users\max_h\.m2\repository\org\testng\testng\6.1.1\testng-6.1.1.jar;C:\Users\max_h\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\max_h\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\max_h\.m2\repository\com\beust\jcommander\1.12\jcommander-1.12.jar;C:\Users\max_h\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\max_h\.m2\repository\com\codeborne\selenide\5.25.0\selenide-5.25.0.jar;C:\Users\max_h\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\max_h\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\max_h\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\max_h\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\max_h\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\max_h\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\max_h\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\max_h\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\max_h\.m2\repository\com\squareup\okhttp3\okhttp\3.12.13\okhttp-3.12.13.jar;C:\Users\max_h\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\max_h\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\max_h\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1\httpclient5-5.1.jar;C:\Users\max_h\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.1\httpcore5-5.1.1.jar;C:\Users\max_h\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\max_h\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\max_h\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\max_h\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\max_h\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\max_h\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\max_h\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\max_h\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\max_h\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\max_h\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\max_h\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\max_h"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\max_h\IdeaProjects\QA_Automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\max_h\AppData\Local\Temp\surefire2259788061360793320\surefirebooter17068539108808808765.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.1+10-21"/>
+    <property name="user.name" value="max_h"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\max_h\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\max_h\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.1"/>
+    <property name="user.dir" value="C:\Users\max_h\IdeaProjects\QA_Automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Users\max_h\Downloads\apache-maven-4.0.0-alpha-3-bin\apache-maven-4.0.0-alpha-3\bin;C:\Program Files\Java\jdk-19;C:\Users\max_h\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.1\bin;;C:\Users\max_h\Downloads\apache-maven-4.0.0-alpha-3-bin\apache-maven-4.0.0-alpha-3\bin;C:\Program Files\Java\jdk-19;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="test" classname="test_package.FirstTest" time="0.012">
+    <system-out><![CDATA[Hello
+]]></system-out>
+  </testcase>
+  <testcase name="selenideConfig" classname="test_package.SecondTest" time="20.289">
+    <failure message="unknown error: cannot find Chrome binary&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-BVVFRD3&apos;, ip: &apos;169.254.123.223&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;&#10;Driver info: driver.version: SelenideDriver&#10;selenide.url: https://github.com/Horokhov/QA_Automation&#10;selenide.baseUrl: http://localhost:8080&#10;remote stacktrace: Backtrace:&#10;	(No symbol) [0x00796643]&#10;	(No symbol) [0x0072BE21]&#10;	(No symbol) [0x0062DA9D]&#10;	(No symbol) [0x0064CC30]&#10;	(No symbol) [0x0064A899]&#10;	(No symbol) [0x00686917]&#10;	(No symbol) [0x0068655C]&#10;	(No symbol) [0x0067FB76]&#10;	(No symbol) [0x006549C1]&#10;	(No symbol) [0x00655E5D]&#10;	GetHandleVerifier [0x00A0A142+2497106]&#10;	GetHandleVerifier [0x00A385D3+2686691]&#10;	GetHandleVerifier [0x00A3BB9C+2700460]&#10;	GetHandleVerifier [0x00843B10+635936]&#10;	(No symbol) [0x00734A1F]&#10;	(No symbol) [0x0073A418]&#10;	(No symbol) [0x0073A505]&#10;	(No symbol) [0x0074508B]&#10;	BaseThreadInitThunk [0x761300F9+25]&#10;	RtlGetAppContainerNamedObjectPath [0x77C37BBE+286]&#10;	RtlGetAppContainerNamedObjectPath [0x77C37B8E+238]&#10;" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+unknown error: cannot find Chrome binary
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BVVFRD3', ip: '169.254.123.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: SelenideDriver
+selenide.url: https://github.com/Horokhov/QA_Automation
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	(No symbol) [0x00796643]
+	(No symbol) [0x0072BE21]
+	(No symbol) [0x0062DA9D]
+	(No symbol) [0x0064CC30]
+	(No symbol) [0x0064A899]
+	(No symbol) [0x00686917]
+	(No symbol) [0x0068655C]
+	(No symbol) [0x0067FB76]
+	(No symbol) [0x006549C1]
+	(No symbol) [0x00655E5D]
+	GetHandleVerifier [0x00A0A142+2497106]
+	GetHandleVerifier [0x00A385D3+2686691]
+	GetHandleVerifier [0x00A3BB9C+2700460]
+	GetHandleVerifier [0x00843B10+635936]
+	(No symbol) [0x00734A1F]
+	(No symbol) [0x0073A418]
+	(No symbol) [0x0073A505]
+	(No symbol) [0x0074508B]
+	BaseThreadInitThunk [0x761300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77C37BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77C37B8E+238]
+
+	at test_package.SecondTest.selenideConfig(SecondTest.java:9)
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 30286
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="setUp" classname="test_package.SecondTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="test2" classname="test_package.SecondTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="shutDown" classname="test_package.SecondTest" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>
