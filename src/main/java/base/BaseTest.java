@@ -5,18 +5,18 @@ import org.testng.annotations.*;
 public class BaseTest {
     @BeforeClass(alwaysRun = true, description = "Configs for tests")
     public void configuration() {
-        com.codeborne.selenide.Configuration.browser = "edge";
-        com.codeborne.selenide.Configuration.holdBrowserOpen = false;
+        com.codeborne.selenide.Configuration.browser = "chrome";
+        com.codeborne.selenide.Configuration.holdBrowserOpen = true;
         com.codeborne.selenide.Configuration.startMaximized = true;
         com.codeborne.selenide.Configuration.screenshots = false;
-        com.codeborne.selenide.Configuration.headless = true;
+        com.codeborne.selenide.Configuration.headless = false;
         com.codeborne.selenide.Configuration.pageLoadStrategy = "normal";
-        com.codeborne.selenide.Configuration.pageLoadTimeout = 20000;
-        Configuration.timeout = 10000;
+        com.codeborne.selenide.Configuration.pageLoadTimeout = 200000;
+        Configuration.timeout = 100000;
     }
     @BeforeMethod(alwaysRun = true, description = "Opening URL")
     public void setUp() {
-        Selenide.open("https://www.google.com");
+        Selenide.open("https://www.saucedemo.com/");
     }
 
     @AfterMethod(alwaysRun = true, description = "WebDriver CleanUp")
