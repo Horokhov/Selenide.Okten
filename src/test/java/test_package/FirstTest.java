@@ -21,5 +21,10 @@ public class FirstTest extends BaseTest {
         Selenide.sleep(1000);
         Selenide.actions().sendKeys(Keys.ESCAPE).perform();
         Selenide.sleep(3000);
+        String text = $(By.xpath("//div[@class=\"inventory_item_name\"][1]")).text();
+        for (String s : $$(By.xpath("//div[@class=\"inventory_item_name\"]")).texts()) {
+            System.out.println(s);
+        }
+
     }
 }
